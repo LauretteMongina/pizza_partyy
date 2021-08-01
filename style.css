@@ -71,3 +71,44 @@ a{
 #drink{
     padding-top: 2%;
   }
+  #make-order{
+    background-image: url("foodsBg.jpg");
+  }
+  th{
+    color: white;
+  }
+  #make-order h2{
+    color: black;
+    font-weight: bold;
+  }
+  label{
+    color:white;
+  }
+  .choices h2{
+    color: red;
+  }
+  i{color: red;}
+  #nine{
+    justify-content: center;
+  }
+  #five{
+    justify-content: center;
+  }
+  .form-control{
+    background: transparent;
+  }
+  #four h3{
+    color: red;
+    text-align: center;
+  }
+  #four p{
+    color: white;
+  }
+  #five h3{
+    color: red;
+    text-align: center;
+  }
+  #five p{
+    color: white;
+  }
+        
