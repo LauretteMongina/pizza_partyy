@@ -18,26 +18,26 @@
 </head>
 <body>
   <div class="container-fluid" style="background-color: black;" id="one">
+    <header>
+      <nav class="navbar">
+        <ul>
+          <a href="#about" class="home">ABOUT</a>
+          <a href="#food" class="about">APPETIT</a>
+          <a href="#make-order" class="work">ORDER</a>
+          <a href="#contact" class="contact">CONTACT</a>
+        </ul>
+      </nav>
+  </header>
     <div class="row no-gutters">
     <div class="col-lg-6"  id="two">
       <p style="color: black;font-weight: bold;font-size: xx-large;" >GET YOUR<br>
       <p style="color: red;font-weight: bold;font-size: xx-large;">DELICIOUS</p>
       <P style="color: white;font-weight: bold;font-size: xx-large;">PIZZA<span style="font-size: 70px;">&#128131</span></P>
     </div>
-    <div class="col-lg-6" id="backg">
-      <div class="nav">
-        <ul>
-          <li><a href="#header" class="home">HOME</a></li>
-          <li><a href="#Section" class="about">ABOUT</a></li>
-          <li><a href="#work" class="work">WORK</a></li>
-          <li><a href="#contact" class="contact">CONTACT</a></li>
-        </ul>
-      </div>
-    </div>
   </div>
   </div>
      <!-- about us -->
-     <div class="col">
+     <div class="col" id="about">
       <h2>Pizzeria paree</h2>
       <h2 style="color: red;" >Welcome</h2>
         <p>Our pizzas are the best in town, you'll most definetely have a party with this</p>
@@ -46,7 +46,7 @@
         <p>We allow you to customize your own pizza, depending on the size you want, crust type and toppings. You love that, don't you?</p>
         <p>We offer delivery services,right at your doorstep</p>
     </div>
-    <div class="container-fluid" id="food">
+    <div class="container" id="food">
       <h2 style="color: red;" >BON APPETIT</h2>
         <div class="row">
           <div class="col-md-3" id="work1" >
@@ -63,7 +63,7 @@
           </div>
         </div>
     </div>
-    <div class="container-fluid" id="drink">
+    <div class="container" id="drink">
       <div class="row">
         <div class="col-md-2" id="work5">
           <img src="wine1.jpg" alt="">
@@ -95,7 +95,7 @@
           <form>
             <div class="form-group">
               <label for="exampleFormControlSelect1">Pick a flavour</label>
-              <select class="form-control" id="exampleFormControlSelect1">
+              <select class="form-control" id="name1">
                 <option>Meat Deluxe</option>
                 <option>Pepperoni</option>
                 <option>Veggie pizza</option>
@@ -106,7 +106,7 @@
             </div>
             <div class="form-group">
               <label for="exampleFormControlSelect1">Pick a size</label>
-              <select class="form-control" id="exampleFormControlSelect1">
+              <select class="form-control" id="size">
                 <option>Large--shs.1200</option>
                 <option>Medium--shs.900</option>
                 <option>Small--shs.600</option>
@@ -114,7 +114,7 @@
             </div>
             <div class="form-group">
               <label for="exampleFormControlSelect1">Pick a crust</label>
-              <select class="form-control" id="exampleFormControlSelect1">
+              <select class="form-control" id="crust">
                 <option>crispy</option>
                 <option>Gluten-free</option>
                 <option>Stuffed</option>
@@ -122,16 +122,16 @@
             </div>
             <label for="Toppings">Select your favourite toppings @60 bob</label><br>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-              <label class="form-check-label" for="inlineCheckbox1">Mozzarella</label>
+              <input class="form-check-input" type="checkbox" id="moz" value="option1">
+              <label class="form-check-label"name="toppings" for="inlineCheckbox1">Mozzarella</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-              <label class="form-check-label" for="inlineCheckbox2">Mushrooms</label>
+              <input class="form-check-input" type="checkbox" id="mushroom" value="option2">
+              <label class="form-check-label" name="toppings" for="inlineCheckbox2">Mushrooms</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-              <label class="form-check-label" for="inlineCheckbox3">Sausage</label>
+              <input class="form-check-input" type="checkbox" id="sausage" value="option3">
+              <label class="form-check-label" name="toppings" for="inlineCheckbox3">Sausage</label>
             </div>
             <button type="submit" class="btn btn-orange proceed" style="background-color: red;">Submit</button>
           </form>
