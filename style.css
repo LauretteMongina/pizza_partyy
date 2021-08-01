@@ -11,14 +11,17 @@ ul{
   padding: 0;
   
 }
-
+.choices{
+  display: none;
+}
+.delivery{display: none;}
 #one{
   background-image: url("pizzabg.jpg");
   opacity: 0.9;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 80vh;
+  height: 100vh;
   overflow: hidden;
 }
 #backg{
@@ -43,6 +46,9 @@ header .navbar{
 }#about p{
   color:black;
   font-weight: bold;
+}
+#about{
+  height: 50vh;
 }
 #drink{
   margin-left: 12%;
