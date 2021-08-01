@@ -107,39 +107,39 @@
             <div class="form-group">
               <label for="exampleFormControlSelect1">Pick a size</label>
               <select class="form-control" id="size">
-                <option>Large--shs.1200</option>
-                <option>Medium--shs.900</option>
-                <option>Small--shs.600</option>
+                <option value="large">Large--shs.1200</option>
+                <option value="medium">Medium--shs.900</option>
+                <option value="small">Small--shs.600</option>
               </select>
             </div>
             <div class="form-group">
               <label for="exampleFormControlSelect1">Pick a crust</label>
               <select class="form-control" id="crust">
-                <option>crispy</option>
-                <option>Gluten-free</option>
-                <option>Stuffed</option>
+                <option value="crispy">crispy</option>
+                <option value="gluten-free">Gluten-free</option>
+                <option value="stuffed">Stuffed</option>
               </select>
             </div>
             <label for="Toppings">Select your favourite toppings @60 bob</label><br>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="moz" value="option1">
-              <label class="form-check-label"name="toppings" for="inlineCheckbox1">Mozzarella</label>
+              <input class="form-check-input" type="checkbox" id="Mozzarella" value="Mozzarella">
+              <label class="form-check-label" name="toppings" for="Mozzarella">Mozzarella</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="mushroom" value="option2">
-              <label class="form-check-label" name="toppings" for="inlineCheckbox2">Mushrooms</label>
+              <input class="form-check-input" type="checkbox" id="Bacon" value="Bacon">
+              <label class="form-check-label" name="toppings" for="Bacon">Bacon</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="sausage" value="option3">
-              <label class="form-check-label" name="toppings" for="inlineCheckbox3">Sausage</label>
+              <input class="form-check-input" type="checkbox" id="Sausage" value="Sausage">
+              <label class="form-check-label" name="toppings" for="Sausage">Sausage</label>
             </div>
-            <button type="submit" class="btn btn-orange proceed" style="background-color: red;">Submit</button>
+            <button type="submit" class="btn btn-orange submit" style="background-color: red;">Submit</button>
           </form>
         </div>
         <div class="col-sm-6">
           <div class="choices">
             <h2 style="color: red;" >Your Order is:</h2>
-              <div id="orders">
+              <div id="orders" style="color: white;" >
                 <table class="table table-sm  pizzatable">
                   <thead>
                     <tr>
@@ -165,17 +165,17 @@
                   <p id="deliveryprice" style="color: white;" >Delivery will cost sh. 200</p>
                   <p id="message"></p>
               </div>
-              <button class="btn btn-orange addPizza">Add Pizza</button>
+              <button class="btn btn-orange add">Add Pizza</button>
               <button class="btn btn-orange" id="checkout">Checkout</button>
-              <button class="btn btn-orange deliver">Home delivery?</button>
+              <button class="btn btn-orange delivery">Home delivery?</button>
          </div>
          <div class="delivery">
           <form action="">
             <div class="form-group">
               <input type="text" id="name" class="form-control mb-3" placeholder="Name">
-              <input type="text" id="phone" class="form-control mb-3" placeholder="Pnone">
+              <input type="text" id="phone" class="form-control mb-3" placeholder="Phone">
               <input type="text" id="location" class="form-control mb-3" placeholder="Location">
-              <button class="btn" style="background-color: red;" id="final-order">Order</button>
+              <button class="btn" style="background-color: red;" id="last-order">Order</button>
             </div>
           </form>
          </div>
@@ -183,7 +183,7 @@
       </div>  
     </div>
   </div>
-  <div id="six" style="padding-top: 8%;background-color: black;color: white;">
+  <div id="six" style="padding-top: 5%;background-color: black;color: white;">
     <div class="container-fluid">
       <div class="row">
       <div class="col-md-3">
@@ -202,7 +202,7 @@
       </div>
       <div class="col-md-6">
         <div id="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8518303744854!2d36.799789013957884!3d-1.2611551359530364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f176b69033ae5%3A0x527c0b54641e212!2sSarit%20Centre%2C%20Karuna%20Rd%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1627660282551!5m2!1sen!2ske" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8518303744854!2d36.799789013957884!3d-1.2611551359530364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f176b69033ae5%3A0x527c0b54641e212!2sSarit%20Centre%2C%20Karuna%20Rd%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1627660282551!5m2!1sen!2ske" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
     </div>
