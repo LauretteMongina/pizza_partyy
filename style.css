@@ -1,0 +1,49 @@
+html,body{
+  margin: 0 ;
+  padding: 0;
+  overflow-x: hidden;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+#one{
+  background-image: url("pizza5.jpg");
+  opacity: 0.9;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  overflow: hidden;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+a{
+  text-decoration: none;
+
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+}
+.nav ul li{
+  padding: 10px;}
+.nav ul li a{
+             color:red;
+             font-weight: bold;
+}
+/* div{
+  border: 2px dashed red;
+} */
+.nav{ 
+  padding-left: 20%;
+  color: red;
+}
