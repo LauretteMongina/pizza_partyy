@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 html,body{
   margin: 0 ;
   padding: 0;
   overflow-x: hidden;
+  font-family: 'Nunito', sans-serif;
 }
 ul{
   list-style: none;
@@ -11,7 +13,7 @@ ul{
 }
 
 #one{
-  background-image: url("pizza5.jpg");
+  background-image: url("pizzabg.jpg");
   opacity: 0.9;
   background-size: cover;
   background-repeat: no-repeat;
@@ -19,41 +21,31 @@ ul{
   height: 80vh;
   overflow: hidden;
 }
-ul{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  
+#backg{
+  position: fixed;
 }
-a{
-  text-decoration: none;
-
+header{
+  top: 0;left: 0;right: 0;
+  z-index: 1000;
+  align-items: center;
+  justify-content: space-between;
 }
-.nav ul{
-    display: flex;
-    justify-content: space-between;
-    height: 30px;
-}
-.nav ul li{
-  padding: 10px;}
-.nav ul li a{
-             color:red;
-             font-weight: bold;
-}
-/* div{
-  border: 2px dashed red;
-} */
-.nav{ 
-  padding-left: 20%;
+header .navbar{
   color: red;
+  margin-left: 30%;
+  padding-right: 3%;
+}
+.navbar a{
+  color:red;
 }
 #about ,h2,p{
   text-align: center;
 }#about p{
   color:black;
+  font-weight: bold;
 }
-#food{
-  background-color: black;
+#drink{
+  margin-left: 12%;
 }
 #two{
   color: white;
