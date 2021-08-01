@@ -47,3 +47,27 @@ a{
   padding-left: 20%;
   color: red;
 }
+#about ,h2,p{
+  text-align: center;
+}#about p{
+  color:black;
+}
+#food{
+  background-color: black;
+}
+#two{
+  color: white;
+  font-size: 25px;
+  font-family: "lobster", cursive;
+  padding-top: 10%;
+}
+#food img{
+  width: 85%;
+  height: 85%;}
+#drink img{
+    width: 85%;
+    height: 85%;
+  }
+#drink{
+    padding-top: 2%;
+  }
