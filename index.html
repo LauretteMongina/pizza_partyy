@@ -120,18 +120,14 @@
                 <option value="stuffed">Stuffed</option>
               </select>
             </div>
-            <label for="Toppings">Select your favourite toppings @60 bob</label><br>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="Mozzarella" value="Mozzarella">
-              <label class="form-check-label" name="toppings" for="Mozzarella">Mozzarella</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="Bacon" value="Bacon">
-              <label class="form-check-label" name="toppings" for="Bacon">Bacon</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="Sausage" value="Sausage">
-              <label class="form-check-label" name="toppings" for="Sausage">Sausage</label>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Pick a topping</label>
+              <select class="form-control" id="topping">
+                <option value="sausage">Sausage--60</option>
+                <option value="bacon">Bacon--50</option>
+                <option value="mozarella">Mozarella--100</option>
+                <option value="mushrooms">Mushrooms--150</option>
+              </select>
             </div>
             <button type="submit" class="btn btn-orange submit" style="background-color: red;">Submit</button>
           </form>
