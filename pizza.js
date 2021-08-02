@@ -16,7 +16,7 @@ $(document).ready(function(){
    var pizzaName = $("#name1 option:selected").val();
    var pizzaSize = $("#size option:selected").val();
    var pizzaCrust = $("#crust option:selected").val();
-   var pizzaTopping = [];
+   var pizzaTopping = $("#topping option:selected").val();
 
    switch(pizzaSize){
     case "0":
@@ -52,8 +52,24 @@ $(document).ready(function(){
       default:
         console.log("No price"); 
     }
-    var toppingValue = pizzaTopping;
-    console.log(toppingValue);
+    switch(pizzaTopping){
+      case "0":
+        toppingPrice =0;
+      break;
+      case "sausage":
+         toppingPrice = 60;
+       break;
+       case "bacon":
+         toppingPrice = 50;
+       break;
+       case "mozarella":
+         toppingPrice = 100;
+        break;
+        case "mushrooms":
+          toppingPrice = 150;
+       default:
+         console.log("error"); 
+     }
 
     if((pizzaSize == "0") && (pizzaCrust == "0")){
       console.log("nothing selected");
@@ -66,7 +82,7 @@ $(document).ready(function(){
       $("div.choices").slideDown(1000);
     }
 
-    total = price + crustPrice;
+    total = price + crustPrice + toppingPrice;
     console.log(total);
     var checkoutTotal =0;
     checkoutTotal = checkoutTotal + total;
@@ -74,7 +90,7 @@ $(document).ready(function(){
     $("#pizzaname").html($("#name1 option:selected").val());
     $("#pizzasize").html( $("#size option:selected").val());
     $("#pizzacrust").html($("#crust option:selected").val());
-    $("#pizzatopping").html(pizzaTopping.join(", "));
+    $("#pizzatopping").html($("#topping option:selected").val());
     $("#totals").html(total);
     
 // Add pizza backend
@@ -82,7 +98,7 @@ $(document).ready(function(){
       var pizzaName = $("#name1 option:selected").val();
       var pizzaSize = $("#size option:selected").val();
       var pizzaCrust = $("#crust option:selected").val();
-      
+      var pizzaTopping = $("#topping option:selected").val();
       switch(pizzaSize){
         case "0":
           price =0;
@@ -117,6 +133,24 @@ $(document).ready(function(){
           default:
             console.log("price"); 
         }
+      switch(pizzaTopping){
+        case "0":
+          toppingPrice =0;
+        break;
+        case "sausage":
+           toppingPrice = 60;
+         break;
+         case "bacon":
+           toppingPrice = 50;
+         break;
+         case "mozarella":
+           toppingPrice = 100;
+          break;
+          case "mushrooms":
+            toppingPrice = 150;
+         default:
+           console.log("error"); 
+       }
         checkoutTotal = checkoutTotal + total;
         console.log(checkoutTotal);
       var newOrder = new buyPizza(pizzaName, pizzaSize, pizzaCrust,pizzaTopping,total);
