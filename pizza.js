@@ -10,17 +10,13 @@ function buyPizza( name,size,crust,topping, total ){
 }
 
 
-// proceed button
+// submit
 $(document).ready(function(){
   $("button.submit").click(function(event){
    var pizzaName = $("#name1 option:selected").val();
    var pizzaSize = $("#size option:selected").val();
    var pizzaCrust = $("#crust option:selected").val();
    var pizzaTopping = [];
-   $.each($("input[name='toppings']:checked"), function(){            
-       pizzaTopping.push($(this).val());
-   });
-   console.log(pizzaTopping.join(", "));
 
    switch(pizzaSize){
     case "0":
